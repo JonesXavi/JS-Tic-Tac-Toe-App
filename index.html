@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toggleWrapper">
+        <input type="checkbox" class="dn" id="theme-switcher" onclick="switchTheme()"/>
+        <label for="theme-switcher" class="toggle">
+            <span class="toggle__handler">
+                <span class="crater crater--1"></span>
+                <span class="crater crater--2"></span>
+                <span class="crater crater--3"></span>
+            </span>
+            <span class="star star--1"></span>
+            <span class="star star--2"></span>
+            <span class="star star--3"></span>
+            <span class="star star--4"></span>
+            <span class="star star--5"></span>
+            <span class="star star--6"></span>
+        </label>
+    </div>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winning-message">
+        <div data-winning-message-text></div>
+        <button id="restartButton" onclick="startGame()">Restart</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
